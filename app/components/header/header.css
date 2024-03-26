@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+
+  position: fixed;
+  top: 0;
+  z-index: 300;
+
+  /* background-color: darkblue; */
+}
+
+.header__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.header__dropBtn {
+  display: block;
+}
+
+.header__dropBtn-hamburger {
+  width: 1.5rem;
+  height: 1.3125rem;
+}
+
+.header__dropBtn--open {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: absolute;
+  }
+
+  .header__dropBtn {
+    display: none;
+  }
+
+  .header__logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 3rem 3rem;
+  }
+}

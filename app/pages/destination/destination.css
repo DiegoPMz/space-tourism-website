@@ -1,0 +1,244 @@
+/* DESTINATION */
+
+.destination-general {
+  height: 100%;
+  background-image: url(destination/background-destination-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 4.8987rem;
+  overflow-x: hidden;
+}
+
+.destination__title {
+  color: var(--white);
+  font-family: var(--font-s);
+  font-size: 1em;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding-bottom: 32px;
+  padding-top: 24px;
+}
+.destination__title-number {
+  font-weight: 700;
+  opacity: 0.25;
+  padding-right: 0.625rem;
+}
+
+.destination__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.destination__main-planet {
+  display: flex;
+  justify-content: center;
+}
+.destination__planet-image {
+  width: 10.625rem;
+  height: 10.625rem;
+
+  background-image: url(/destination/image-moon.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destination__main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.destination__content-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.625rem;
+}
+.destination__content-options-btn {
+  color: var(--white);
+  font-family: var(--font-s);
+  font-size: 0.875em;
+  letter-spacing: 2.362px;
+  padding-bottom: 0.5px;
+}
+
+.destination__content-title {
+  font-family: var(--font-p);
+  color: var(--white);
+  text-align: center;
+  font-size: 3.5em;
+}
+.destination__content-paragraph {
+  color: var(--litBlue);
+  font-family: var(--font-s);
+  text-align: center;
+  font-size: 0.9375em;
+  line-height: 1.5625rem;
+
+  width: 80%;
+  margin-inline: auto;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #383b4b;
+}
+
+.destination__content-planetValues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.destination__content-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-transform: uppercase;
+}
+.content-value__topTitle {
+  color: var(--litBlue);
+  font-family: var(--font-s);
+  font-size: 0.875em;
+  letter-spacing: 2.362px;
+}
+.content-value__paragraph {
+  color: var(--white);
+  font-family: var(--font-p);
+  font-size: 1.75em;
+}
+
+/* MEDIA */
+@media screen and (min-width: 768px) {
+  .destination-general {
+    background-image: url(destination/background-destination-tablet.jpg);
+  }
+
+  .destination__title {
+    font-size: 1.25em;
+    letter-spacing: 0.2109rem;
+    text-align: left;
+
+    padding-bottom: 3.75rem;
+    padding-top: 2.5rem;
+    padding-left: 2.375rem;
+  }
+
+  .destination__main {
+    gap: 3.3125rem;
+  }
+
+  .destination__planet-image {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+
+  .destination__main-content {
+    gap: 2.9375rem;
+  }
+  .destination__content-options {
+    gap: 2.1875rem;
+  }
+  .destination__content-options-btn {
+    font-size: 1em;
+    letter-spacing: 2.7px;
+    padding-bottom: 1.5px;
+
+    transition: box-shadow 0.3s ease-in;
+  }
+  .destination__content-options-btn:hover {
+    box-shadow: 0 3px 0 0 var(--white);
+  }
+
+  .destination__content-title {
+    font-size: 5em;
+  }
+  .destination__content-paragraph {
+    width: 35rem;
+    font-size: 1em;
+    line-height: 1.75rem;
+    padding-bottom: 3.0625rem;
+  }
+
+  .destination__content-planetValues {
+    flex-direction: row;
+    gap: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destination-general {
+    background-image: url(/destination/background-destination-desktop.jpg);
+    padding-top: 9rem;
+  }
+
+  .destination__title {
+    font-size: 1.75em;
+    letter-spacing: 0.2953rem;
+
+    padding-top: 4.75rem;
+    padding-bottom: 4rem;
+    padding-left: 10rem;
+  }
+
+  .destination__main {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-inline: auto;
+    gap: 0;
+  }
+
+  .destination__main-planet {
+    align-items: flex-end;
+  }
+
+  .destination__planet-image {
+    width: 27.8125rem;
+    height: 27.8125rem;
+  }
+
+  .destination__main-content {
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+  .destination__content-options {
+    gap: 2.1875rem;
+  }
+  .destination__content-options-btn {
+    padding-bottom: 12px;
+  }
+  .destination__content-options-btn:hover {
+    box-shadow: 0 2px 0 0 var(--white);
+  }
+
+  .destination__content-title {
+    font-size: 6.25rem;
+    text-align: left;
+  }
+  .destination__content-paragraph {
+    width: 27.75rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: left;
+    padding-bottom: 3.375rem;
+  }
+
+  .destination__content-planetValues {
+    gap: 4.75rem;
+  }
+  .destination__content-value {
+    align-items: flex-start;
+  }
+}
+
+/* ACTIVE OPTIONS */
+
+.destination__content-options-btn--active {
+  box-shadow: 0 3px 0 -0.99px var(--white);
+}

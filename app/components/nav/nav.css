@@ -1,0 +1,159 @@
+.nav {
+  width: 15.875rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 400;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.nav__div {
+  height: 78px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.6rem;
+}
+
+.nav__div-img {
+  width: 1.1932rem;
+  height: 1.1932rem;
+  object-fit: cover;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.nav__item {
+  font-family: var(--font-s);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 2rem;
+}
+
+.nav__link {
+  letter-spacing: 2.7px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  transition: box-shadow 0.2s ease-out;
+}
+.nav__link:hover {
+  box-shadow: 0 1.5px 0 0 var(--white);
+}
+.nav__number {
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 2.7px;
+}
+
+/* media */
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 2.5rem;
+    padding-right: 1.6rem;
+
+    position: absolute;
+    height: 100%;
+  }
+
+  .nav__div {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 0rem;
+    height: 100%;
+  }
+
+  .nav__item {
+    padding-left: 0;
+    height: 100%;
+    transition: box-shadow 0.3s ease-out;
+  }
+
+  .nav__item:hover {
+    box-shadow: 0 4px 0 -1.5px var(--white);
+  }
+
+  .nav__link {
+    font-size: 0.875em;
+  }
+
+  .nav__link:hover {
+    box-shadow: none;
+  }
+}
+
+/* dekstop */
+@media screen and (min-width: 1440px) {
+  .nav {
+    width: 51.875rem;
+    height: 6rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .nav::before {
+    content: '';
+    width: 473px;
+
+    height: 1px;
+    background-color: var(--white);
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-440px);
+
+    position: absolute;
+
+    opacity: 0.2515;
+  }
+
+  .nav__list {
+    gap: 3rem;
+  }
+
+  .nav__item > .nav__number {
+    display: block;
+  }
+
+  .nav__item > .nav__link {
+    font-size: 1em;
+  }
+}
+
+/* LINK ACTIVE */
+
+/* >768PX */
+
+.nav__link--active {
+  box-shadow: 0 1.5px 0 0 var(--white);
+}
+
+/* <768PX */
+
+.nav__item--active {
+  box-shadow: 0 1.5px 0 0 var(--white);
+}

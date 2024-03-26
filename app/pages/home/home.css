@@ -1,0 +1,149 @@
+.home-general {
+  height: 100%;
+  background-image: url(/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 4.8987rem;
+}
+
+.home {
+  width: 85%;
+  margin-inline: auto;
+  color: var(--litBlue);
+  padding-top: 2rem;
+}
+
+.home__title {
+  letter-spacing: 2.7px;
+  text-align: center;
+  font-family: var(--font-s);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home__title > .home__title-span {
+  line-height: 6.25rem;
+  font-size: 5em;
+  font-family: var(--font-p);
+  color: var(--white);
+}
+
+.home__text {
+  font-family: var(--font-s);
+  font-size: 0.9375em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.home__circle {
+  width: 9.375rem;
+  height: 9.375rem;
+  margin-inline: auto;
+  background-color: var(--white);
+  color: var(--blueDark);
+
+  font-size: 1.25em;
+  letter-spacing: 1.25px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MEDIA */
+@media screen and (min-width: 768px) {
+  .home-general {
+    background-image: url(/home/background-home-tablet.jpg);
+  }
+
+  .home {
+    padding-top: 6rem;
+  }
+
+  .home__title {
+    font-size: 1.25em;
+    letter-spacing: 3.375px;
+    gap: 3rem;
+  }
+
+  .home__title > .home__title-span {
+    font-size: 9.375rem;
+  }
+
+  .home__text {
+    width: 66%;
+    margin-inline: auto;
+    font-size: 1em;
+    line-height: 1.75rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  .home__circle {
+    width: 15.125rem;
+    height: 15.125rem;
+    margin-inline: auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-general {
+    background-image: url(/home/background-home-desktop.jpg);
+    padding-top: 9rem;
+  }
+
+  .home {
+    padding-top: 6rem;
+    width: 75%;
+  }
+
+  .home__div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+  }
+
+  .home__title {
+    letter-spacing: 4.725px;
+    font-size: 1.75rem;
+    text-align: left;
+    gap: 3rem;
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .home__text {
+    width: 85%;
+    max-width: 500px;
+
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+
+    font-size: 1.125em;
+    line-height: 2rem;
+    text-align: left;
+
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+
+  .home__circle {
+    width: 17.125rem;
+    height: 17.125rem;
+    margin-right: 0;
+
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+}
