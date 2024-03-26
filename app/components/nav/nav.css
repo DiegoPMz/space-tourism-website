@@ -115,18 +115,18 @@
   }
   .nav::before {
     content: '';
-    width: 473px;
 
+    width: 58%;
     height: 1px;
     background-color: var(--white);
 
-    top: 0;
-    left: 0;
-    bottom: 0;
     margin: auto;
-    transform: translateX(-440px);
+    top: 0;
+    bottom: 0;
+    left: -50%;
 
     position: absolute;
+    z-index: 1000;
 
     opacity: 0.2515;
   }
@@ -141,6 +141,13 @@
 
   .nav__item > .nav__link {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .nav::before {
+    width: 80%;
+    left: -72%;
   }
 }
 

@@ -1,7 +1,12 @@
-import { Menu } from '../../components/menu/Menu'
-import { animationRotate, animationShowContent, animationTitles } from './animations'
-import { changeContent } from './changeContent'
 import './destination.css'
+
+import { Menu } from '../../components/menu/Menu'
+import {
+  animationRotate,
+  animationShowContent,
+  animationTitles,
+} from './animations'
+import { changeContent } from './changeContent'
 
 export const Destination = () => {
   const Destination = document.createElement('section')
@@ -55,7 +60,7 @@ export const Destination = () => {
     Destination.querySelector('.destination__content-paragraph'),
     Destination.querySelector('.content-value__distance'),
     Destination.querySelector('.content-value__travel'),
-    Destination.querySelectorAll('.content-value__topTitle')
+    Destination.querySelectorAll('.content-value__topTitle'),
   ])
   animationRotate([Destination.querySelector('.destination__planet-image')])
 

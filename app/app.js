@@ -8,7 +8,7 @@ export const app = () => {
   const root = document.querySelector('#root')
   let intervalValues
 
-  const roter = () => {
+  const router = () => {
     root.innerHTML = ''
 
     const LOCATIONS_URL = {
@@ -29,8 +29,7 @@ export const app = () => {
 
         root.appendChild(crew)
         intervalValues = crewInterval
-      }
-
+      },
     }
     const URL = LOCATIONS_URL[location.hash]
 
@@ -47,6 +46,6 @@ export const app = () => {
     }
   }
 
-  window.addEventListener('DOMContentLoaded', roter)
-  window.addEventListener('hashchange', roter)
+  window.addEventListener('DOMContentLoaded', router)
+  window.addEventListener('hashchange', router)
 }
